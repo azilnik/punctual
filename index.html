@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hello, world!</title>
+  <title>Punctual Coffee</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
   <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css" rel="stylesheet">
@@ -19,16 +19,105 @@
   <meta name="twitter:title" content="" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:image" content="" />
+  <style>
+    :root {
+      --cordovan: #76414A;
+      --alabaster: #D8DDCF;
+    }
+    @font-face {
+      font-family: 'GT-Pressura-Medium-Italic';
+      src: url(font/GT-Pressura-Extended-Medium-Italic.ttf);
+    }
+    @font-face {
+      font-family: 'GT-Pressura-Extended-Regular';
+      src: url(font/GT-Pressura-Extended-Regular.ttf);
+    }
+
+    html {
+      background-color: var(--cordovan);
+      color: var(--alabaster);
+      height: 100%;
+      font-family: 'GT-Pressura-Extended-Regular';
+      font-weight: 400;
+      line-height: 1.5rem; /* 100% */
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+  
+    }
+    body:before {
+      border: 8px solid var(--alabaster);
+      content: "";
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      position: fixed;
+      z-index: 99999;
+    }
+    .standard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* padding: 4rem 4rem; */
+        }
+
+    header {
+      background-image: url(img/splash.jpg);
+      background-size: cover;
+      background-position: center center;
+      font-family: 'GT-Pressura-Medium-Italic';
+      font-weight: 400;
+      line-height: 2.5rem; /* 100% */
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      min-height: 100vh;
+      text-align: center;
+      justify-content: space-evenly;
+      padding: 10vw;
+    }
+
+    h2{
+      max-width: 800px;
+
+    }
+
+    .logo {
+      width: 20vw;
+      min-width: 220px;
+    }
+
+    a{
+      color: var(--alabaster);
+    }
+    section {
+      padding: 2rem 1rem;
+    }
+    p, section img {
+      padding: 1rem 2rem;
+      max-width: 700px;
+    }
+    
+
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Hello, world!</h1>
+  <header class="standard">
+    <img class="logo" src="img/logo.svg" />
+    <h2>SKIP THE SCALE, AND LEAVE YOUR GRINDER AT HOME.</h2>
   </header>
-  <nav></nav>
   <main>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="standard">
+      <p>
+        Punctual Coffee was an adventure-ready coffee company lovingly created in Toronto by <a href="https://ari.zilnik.com">Ari</a> and  <a href="https://jbib.la/">Jordan</a>.
+      </p>
+      <p>
+        We created Punctual packets—freshly roasted coffee, ground and weighed to be perfect for your AeroPress or AeroPress Go.
+      </p>
+      <p>
+        The team has moved on to focus on other products, but we still share a love of coffee and adventure.
+      </p>
+      <img src="img/mini.svg" >
+    </section>
   </main>
   <footer></footer>
 </body>
